@@ -18,31 +18,29 @@ export class LoginComponent {
       password: ["", [Validators.required]],
     })
   }
-  onClickRegister(): void {
-    this.usersService.register(this.form.value)
-    .then((response) => {
-      console.log(response);
-    })
-    .catch((error) => {
-      console.log(error);
-    })
-  }
-  onClickLogin(): void {
-    this.usersService.login(this.form.value)
-    .then((response) => {
-      console.log(response);
-    })
-    .catch((error) => {
-      console.log(error);
-    })
-  }
-  onClickLoginWithGoogle(): void {
-    this.usersService.loginWithGoogle()
-    .then((response) => {
-      console.log(response);
-    })
-    .catch((error) => {
-      console.log(error);
-    })
-  }
+  onClickRegister(): void { 
+    this.usersService.register(this.form.value) 
+    .then((response) => { 
+      console.log(response);  
+    }) 
+    .catch(error => console.log(error)); 
+     } 
+     
+     onClickLogin(): void { 
+      this.usersService.login(this.form.value) 
+      .then((response) => { 
+        console.log(response);  
+      }) 
+      .catch(error => console.log(error)); 
+     } 
+     
+     onClickLoginWithGoogle(): void { 
+     
+      this.usersService.loginWithGoogle() 
+      .then((response) => { 
+        console.log(response);  
+      }) 
+      .catch(error => console.log(error)); 
+     
+     } 
 }

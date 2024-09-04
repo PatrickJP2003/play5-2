@@ -18,11 +18,12 @@
                   <a class="nav-link" routerLink="/nosotros" routerLinkActive="active">Nosotros</a>
               </li>
           </ul>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                  <a class="nav-link btn-login" routerLink="/login" routerLinkActive="active">Login</a>
-              </li>
-          </ul>
+          <div class="d-flex"> 
+            <button class="btn btn-outline-success" type="button" routerLink="/login" *ngIf="!isLoggedIn(); else elseTemplate">Iniciar Sesión</button> 
+            <ng-template #elseTemplate> 
+              <button class="btn btn-outline-danger" type="button" (click)="onClickLogout()">Cerrar Sesión</button> 
+            </ng-template> 
+          </div>
       </div>
   </div>
 </nav>
