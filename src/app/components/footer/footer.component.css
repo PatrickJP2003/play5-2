@@ -1,0 +1,22 @@
+/* Estilo general para el body */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el body tenga al menos el alto de la ventana */
+  margin: 0; /* Elimina el margen por defecto */
+}
+
+/* Contenedor para el contenido principal */
+.content {
+  flex: 1; /* Ocupa el espacio restante entre el contenido y el footer */
+}
+
+/* Estilo del footer */
+.footer {
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  padding: 20px 0; /* Espaciado arriba y abajo */
+  position: relative; /* Ajusta el posicionamiento */
+  width: 100%; /* Asegura que el footer ocupe el ancho completo */
+  text-align: center; /* Centra el texto */
+}

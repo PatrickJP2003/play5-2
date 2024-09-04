@@ -1,0 +1,27 @@
+[   
+{
+    "id":1,
+    "nombre":"Gta V",
+    "precio": 10,
+    "tipo":1,
+    "descripcion":"footboll",
+    "imagen": "imagenes/FC25.jpg"
+},
+{
+    "id":2,
+    "nombre":"Red Dead Redemption 2",
+    "precio": 20,
+    "tipo":2,
+    "descripcion":"gta v",
+    "imagen": "imagenes/gta 5.jpg"
+},
+{
+    "id":3,
+    "nombre":"Fifa 2025",
+    "precio": 100,
+    "tipo":3,
+    "descripcion":"Juego de futbol",
+    "imagen": "imagenes/callduti.jfif"
+}
+
+]

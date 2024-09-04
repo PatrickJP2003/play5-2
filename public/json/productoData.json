@@ -1,0 +1,27 @@
+[   
+{
+    "id":1,
+    "nombre":"gta v",
+    "precio": 150,
+    "tipo":1,
+    "descripcion":"Juego de mundo libre",
+    "imagen": "imagenes/gtav.jpg"
+},
+{
+    "id":2,
+    "nombre":"Call of Dutty",
+    "precio": 100,
+    "tipo":2,
+    "descripcion":"Juego gerra",
+    "imagen": "imagenes/callduti.jfif"
+},
+{
+    "id":3,
+    "nombre":"Fifa",
+    "precio": 13,
+    "tipo":3,
+    "descripcion":"Juego de futbol",
+    "imagen": "imagenes/FC-25-02.jpg"
+}
+
+]

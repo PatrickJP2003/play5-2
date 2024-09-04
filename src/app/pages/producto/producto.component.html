@@ -1,0 +1,18 @@
+<body>
+  <div class="background-container">
+    <div class="container-fluid text-center">
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card" style="width: 100%; max-width: 24rem; cursor: pointer;">
+            <img [src]="producto?.imagen" class="card-img-top" alt="Producto imagen">
+            <div class="card-body">
+              <h5 class="card-title">{{producto?.nombre}}</h5>
+              <p class="card-text">Peso: {{producto?.descripcion}}</p>
+              <p class="card-text">Precio: {{producto?.precio}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

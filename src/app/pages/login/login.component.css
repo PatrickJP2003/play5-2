@@ -1,0 +1,44 @@
+/* Background overlay styling */
+.background-overlay {
+    background-image: url('https://wallpapercave.com/wp/wp3210623.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* General container styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card styling */
+.card {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Button styling */
+.btn-primary {
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #1a7d7e;
+}

@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "nombre": "Juan Pérez",
+      "edad": 30,
+      "descripcion": "Desarrollador",
+      "imagen": "imagenes/thiago.webp"
+    },
+    {
+      "id": 2,
+      "nombre": "Ana Gómez",
+      "edad": 25,
+      "descripcion": "Diseñadora",
+      "imagen": "imagenes/roca.jpeg"
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos Martínez",
+      "edad": 40,
+      "descripcion": "Gerente",
+      "imagen": "imagenes/cr7.webp"
+    }
+  ]

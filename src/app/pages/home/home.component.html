@@ -1,0 +1,86 @@
+<div class="page-background">
+<div class="carousel-container-1">
+  <!-- Primer Carrusel -->
+  <div id="carouselExampleRide1" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-inner">
+      <div *ngFor="let epic of epics" [class]="epic.id == 1 ? 'carousel-item active' : 'carousel-item'">
+        <img [src]="epic.imagen" class="d-block w-100" [alt]="epic.nombre">
+        <div class="carousel-caption">
+          <h5 *ngIf="epic.precio > 90; else elseTemplate">Producto más caro</h5>
+          <ng-template #elseTemplate><h5>Producto más comprado</h5></ng-template>
+          <span [ngSwitch]="epic.tipo">
+            <div *ngSwitchCase="1">Acción</div>
+            <div *ngSwitchCase="2">Aventura</div>
+            <div *ngSwitchCase="3">Competitivo</div>
+            <div *ngSwitchDefault>Es desconocido</div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide1" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="container">
+  <!-- Segundo Carrusel -->
+  <div class="carousel-container">
+    <h3 class="carousel-title">Más Juegos</h3>
+    <div id="carouselExampleRide2" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-inner">
+        <div *ngFor="let producto of productos" [class]="producto.id == 1 ? 'carousel-item active' : 'carousel-item'">
+          <div class="d-flex carousel-content">
+            <div class="carousel-image-container">
+              <img [src]="producto.imagen" class="carousel-image" [alt]="producto.nombre">
+            </div>
+            <div class="carousel-description">
+              <h5 *ngIf="producto.precio > 200; else elseTemplate">El producto más caro</h5>
+              <ng-template #elseTemplate><h5>Juego Gratis</h5></ng-template>
+              <span [ngSwitch]="producto.tipo">
+                <div *ngSwitchCase="1">Competitivo</div>
+                <div *ngSwitchCase="2">Aventura</div>
+                <div *ngSwitchCase="3">Acción</div>
+                <div *ngSwitchDefault>Es desconocido</div>
+              </span>
+              <button type="button" class="btn btn-primary mt-3">Más Información</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="carousel-container">
+  <!-- Tercer Carrusel -->
+  <div class="carousel">
+    <div class="carousel-content">
+      <div class="carousel-image-container">
+         <img [src]="oficinas[0].imagen" alt="Juego de la Semana" style="width: 100%;">
+      </div>
+      <div class="carousel-description">
+        <h5>PlayStation</h5>
+        <p>Explora la mejor selección de juegos para PlayStation. Disfruta de una amplia gama de títulos, desde los más emocionantes juegos de acción hasta aventuras épicas que te mantendrán enganchado por horas. No te pierdas las últimas novedades y promociones exclusivas disponibles solo en nuestra tienda. ¡Descubre todo lo que PlayStation tiene para ofrecerte!</p>
+        <button type="button" class="btn btn-primary" (click)="onClickButton()">Ir a Productos</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</div>
